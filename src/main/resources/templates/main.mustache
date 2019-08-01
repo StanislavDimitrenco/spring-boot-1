@@ -28,12 +28,19 @@
     <button type="submit">Search</button>
 
 </form>
+<table>
 {{#messages}}
-    <br>
-    <b>{{id}}</b>
-    <p>{{text}}</p>
-    <i>{{tag}}</i>
+    <tr>
+        <td>{{id}}</td>
+        <td>{{text}}</td>
+        <td><i>{{tag}}</i></td>
+        <td><strong>{{authorName}}</strong></td>
+    </tr>
 {{/messages}}
+</table>
+
+
+
 
 </body>
 </html>
