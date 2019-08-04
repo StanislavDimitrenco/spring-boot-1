@@ -1,6 +1,5 @@
 package com.spring2.sweater.domain;
 
-import org.omg.CORBA.UserException;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
