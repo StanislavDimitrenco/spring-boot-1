@@ -10,9 +10,10 @@
             User list
         </a>
     </div>
-<form method="post">
+<form method="post" enctype="multipart/form-data">
     <input type="text" name="text" placeholder="your message">
     <input type="text" name="tag" placeholder="tag">
+    <input type="file" name="file">
     <input type="hidden" name="_csrf" value="${_csrf.token}">
     <button type="submit">Сохранить</button>
 </form>
@@ -30,6 +31,11 @@
         <td>${m.text}</td>
         <td><i>${m.tag}</i></td>
         <td><strong>${m.authorName}</strong></td>
+        <td>
+            <#if m.filename??>
+            <img src="/img/${m.filename}" alt=""></td>
+            </#if>
+
     </tr>
     <#else >
     No messages
