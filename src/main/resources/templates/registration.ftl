@@ -6,5 +6,5 @@
     <div>
         ${message!}
     </div>
-    <@l.login "/registration" />
+    <@l.login "/registration" true false/>
 </@c.page>
