@@ -15,7 +15,7 @@
                     <span class="badge badge-info">${m.tag}</span>
                 </div>
                 <div class="card-footer text-muted">
-                    ${m.authorName}
+<#--                    ${m.authorName}-->
                 </div>
             </div>
         <#else >

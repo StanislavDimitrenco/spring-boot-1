@@ -13,6 +13,14 @@
                 <input type="password" name="password" class="form-control"/>
             </div>
         </div>
+        <#if isRegistrForm>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label"> Email:</label>
+            <div class="col-sm-6">
+                <input type="email" name="email" class="form-control"/>
+            </div>
+        </div>
+        </#if>
         <div class="col-sm-6">
             <input class="btn btn-primary" type="submit" value="<#if isRegistrForm >Registratin<#else >Sign In</#if>" />
         </div>

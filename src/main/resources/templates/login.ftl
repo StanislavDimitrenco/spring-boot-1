@@ -3,6 +3,7 @@
 
 <@c.page>
     <h1>Login</h1>
+    ${message!}
     <@l.login "/login" false true/>
 </@c.page>
 
